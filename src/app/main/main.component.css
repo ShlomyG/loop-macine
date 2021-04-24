@@ -1,0 +1,73 @@
+.pads_container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
+@media (max-width: 800px) {
+    .pads_container {
+    display: flex;
+}
+
+.pad{
+    width: 25vh;
+    height: 25vh;
+    font-size: 6vh; 
+}
+  }
+
+.controls_bar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 0;
+
+  }
+
+  .play{background-color:  rgb(2, 55, 90);
+  }
+
+  .stop{
+    background-color: white; 
+  }
+
+  button{
+    margin: 25px 15px 25px 15px;
+  }
+
+h1{
+    padding-top: 15px;
+    text-align: center;
+    font-family: "Dax", sans-serif;
+    color: white;
+    font-size: 6.5vh; 
+    font-weight: 900;
+}
+
+.pad {
+    cursor: pointer;
+    outline: none;
+    border: 3px solid  rgb(2, 55, 90);
+    font-size: 5vh; 
+    font-family: "Dax", sans-serif;
+    line-height: 2;
+    font-weight: 900;
+    color: rgb(2, 55, 90);
+    width: 38vh;
+    height: 36vh;
+    text-align: center;
+    margin: 10px;
+    background-color:  white  
+ }
+
+
+    .click_pad {
+        color:  #1a1a1a;
+        background-image: url("https://static9.depositphotos.com/1004996/1111/v/950/depositphotos_11119809-stock-illustration-music-background.jpg");
+        background-size: 100%;
+      }

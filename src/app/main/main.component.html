@@ -1,0 +1,20 @@
+<div class="main" >
+    <h1>Loop 🎶 Machine</h1>
+    <div class="controls_bar" >
+        <button class="play" mat-fab  aria-label="Play" (click)="playPads()">
+            <mat-icon>play_arrow</mat-icon>
+          </button>
+          <button mat-fab class="stop" aria-label="Stop" (click)="stopAllPads()">
+            <mat-icon>stop</mat-icon>
+          </button>
+    </div>
+    <div class="pads_container">
+        <div class="pads_list" *ngFor="let pad of padslist" >
+            <div matRipple (click)="pad.inPlaylist ? removeFromPlaylist(pad) : addToPlaylist(pad)" [ngClass]="pad.inPlaylist ? 'pad click_pad' : 'pad'">
+                 {{pad.name.toUpperCase()}} 
+                 <br/>
+                    <span *ngIf="pad.inPlaylist">🎵</span>
+                </div>
+        </div>
+    </div>
+</div>
